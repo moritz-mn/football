@@ -1,0 +1,9 @@
+{
+	"short_name": "Football",
+	"name": "Football Standings App",
+
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#000000",
+	"background_color": "#24252a"
+}
