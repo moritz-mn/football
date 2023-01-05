@@ -3,10 +3,10 @@
 import { ReactElement, PropsWithChildren, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import './navbar.scss';
-import { ReactComponent as Cog } from '../../../icons/cog.svg';
-import { ReactComponent as Arrow } from '../../../icons/arrow.svg';
-import { ReactComponent as Chevron } from '../../../icons/chevron.svg';
-import { ReactComponent as Germany } from '../../../icons/countries/germany.svg';
+import { ReactComponent as Cog } from '../../icons/cog.svg';
+import { ReactComponent as Arrow } from '../../icons/arrow.svg';
+import { ReactComponent as Chevron } from '../../icons/chevron.svg';
+import { ReactComponent as Germany } from '../../icons/countries/germany.svg';
 import { Link, NavLink } from 'react-router-dom';
 
 interface DropdownItemProps extends PropsWithChildren<unknown> {
@@ -57,7 +57,8 @@ export default function NavbarDropdown(): ReactElement {
 				unmountOnExit
 				timeout={500}
 				classNames="menu-primary"
-				onEnter={calcHeight}>
+				onEnter={calcHeight}
+			>
 				<div className="menu">
 					<DropdownItem rightIcon={<Chevron />} goToMenu="settings">
 						Settings
@@ -73,7 +74,8 @@ export default function NavbarDropdown(): ReactElement {
 				unmountOnExit
 				timeout={500}
 				classNames="menu-secondary"
-				onEnter={calcHeight}>
+				onEnter={calcHeight}
+			>
 				<div className="menu">
 					<DropdownItem leftIcon={<Arrow />} goToMenu="main">
 						Go Back
@@ -89,7 +91,8 @@ export default function NavbarDropdown(): ReactElement {
 				unmountOnExit
 				timeout={500}
 				classNames="menu-secondary"
-				onEnter={calcHeight}>
+				onEnter={calcHeight}
+			>
 				<div className="menu">
 					<DropdownItem leftIcon={<Arrow />} goToMenu="main">
 						Go Back
@@ -106,7 +109,8 @@ export default function NavbarDropdown(): ReactElement {
 				unmountOnExit
 				timeout={500}
 				classNames="menu-secondary"
-				onEnter={calcHeight}>
+				onEnter={calcHeight}
+			>
 				<div className="menu">
 					<DropdownItem leftIcon={<Arrow />} goToMenu="countries">
 						Go Back
